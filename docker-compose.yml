@@ -333,7 +333,7 @@ services:
   minio:
     <<: *hardened
     # To bump: docker buildx imagetools inspect cgr.dev/chainguard/minio:latest-dev | grep Digest
-    image: cgr.dev/chainguard/minio:latest-dev@sha256:32b5a874739ffae82c8d79ed10a66f675970576d6dc256b47caced2cfd1d8d10
+    image: cgr.dev/chainguard/minio:latest-dev@sha256:7717a5af49bf690555e5b53abb9a749cbb80e087fdc669696559e0b530ea033e
     entrypoint: ["/usr/bin/minio"]
     command: ["server", "/data", "--address", ":9000"]
     environment:
