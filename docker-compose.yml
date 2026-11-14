@@ -362,7 +362,7 @@ services:
   minio-init:
     <<: *hardened
     # To bump: docker buildx imagetools inspect cgr.dev/chainguard/minio-client:latest-dev | grep Digest
-    image: cgr.dev/chainguard/minio-client:latest-dev@sha256:fcc386401031a266a961637d21f6939e0a3032b63e904950c6277bfca260cc29
+    image: cgr.dev/chainguard/minio-client:latest-dev@sha256:fc1752e8f7279a159e851c771ade5252901406da83d72cd29d1a9373cb0c5063
     entrypoint: ["/bin/sh", "/infra/minio-init.sh"]
     restart: "no"
     environment:
